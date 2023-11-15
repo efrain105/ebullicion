@@ -33,34 +33,47 @@
 </head>
 
 
-
-
 <body class="bg-white dark:bg-gray-900">
 
 <section class="bg-white dark:bg-gray-900">
   <div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
     <div class="font-light text-gray-500 sm:text-lg dark:text-gray-400">
-      <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">We didn't reinvent the wheel</h2>
-      <p class="mb-4">We are strategists, designers and developers. Innovators and problem solvers. Small enough to be simple and quick, but big enough to deliver the scope you want at the pace you need. Small enough to be simple and quick, but big enough to deliver the scope you want at the pace you need.</p>
-      <p>We are strategists, designers and developers. Innovators and problem solvers. Small enough to be simple and quick.</p>
+      <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Temperatura y
+        ebullicion</h2>
+      <p class="mb-4">La relación entre temperatura, presión y punto de ebullición es compleja y específica para cada
+        sustancia. Sin embargo, a menudo se observa que, manteniendo constante la presión, el punto de ebullición
+        aumenta con el aumento de la temperatura. De manera inversa, manteniendo constante la temperatura, un aumento en
+        la presión suele elevar el punto de ebullición.
+        En resumen, la variación del punto de ebullición con respecto a la temperatura y la presión es una manifestación
+        de la dinámica molecular y las fuerzas intermoleculares. Comprender esta relación es esencial en campos como la
+        química, la física y la ingeniería, donde se busca manipular las condiciones para procesos específicos.</p>
+
     </div>
+
     <div class="grid grid-cols-2 gap-4 mt-8">
-      <img class="w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/office-long-2.png" alt="office content 1">
-      <img class="mt-4 w-full lg:mt-10 rounded-lg" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/office-long-1.png" alt="office content 2">
+      <img class="w-full rounded-lg"
+           src="https://www.greensidesolutions.com/wp-content/uploads/2023/08/comienza-la-era-de-la-ebullicion-global.jpg" alt="office content 1">
+      <img class="mt-4 w-full lg:mt-10 rounded-lg"
+           src="https://media.istockphoto.com/id/471154393/es/foto/ebullici%C3%B3n-matraz-con-base-redonda.jpg?s=612x612&w=0&k=20&c=r1dQJksuwhahSLpE15bSalQPzWNNYMmgt7wJf_0LmI8=" alt="office content 2">
     </div>
   </div>
 </section>
 <div class="bg-white dark:bg-gray-900">
-  <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Modificador de Punto de Ebullición del Agua</h2>
+  <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Modificador de Punto de
+    Ebullición del Agua</h2>
 
-  <label for="pressureRange" style="display: block; font-size: 0.875rem; font-weight: 500; color: #ffffff; margin-bottom: 4px;">Presión (atm): </label>
+  <label for="pressureRange"
+         style="display: block; font-size: 0.875rem; font-weight: 500; color: #ffffff; margin-bottom: 4px;">Presión
+    (atm): </label>
   <input type="range" min="0.01" max="4" step="0.01" value="1" id="pressureRange" oninput="updateBoilingPoint()"
          style="width: 300px; margin-top: 8px;">
 
-  <p class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Presión actual: <span id="currentPressure" style="font-weight: bold;">1</span> atm</p>
+  <p class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Presión actual: <span
+    id="currentPressure" style="font-weight: bold;">1</span> atm</p>
 
   <div style="margin-top: 12px;">
-    <p class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">El punto de ebullición del agua a <span id="boilingPoint" style="font-weight: bold;">100</span> °C.</p>
+    <p class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">El punto de ebullición del agua
+      a <span id="boilingPoint" style="font-weight: bold;">100</span> °C.</p>
   </div>
 </div>
 
