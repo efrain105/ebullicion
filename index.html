@@ -18,6 +18,21 @@
       margin-top: 20px;
     }
   </style>
+  <style>
+    /* Cambiar el color de la bolita del rango en navegadores WebKit como Chrome y Safari */
+    input[type="range"]::-webkit-slider-thumb {
+      background-color: #2563eb; /* Cambia este color según tus preferencias */
+      border: 3px solid #ffffff; /* Puedes cambiar el color del borde si lo deseas */
+      height: 18px; /* Ajusta la altura de la bolita */
+      width: 18px; /* Ajusta el ancho de la bolita */
+      border-radius: 50%; /* Hace que la bolita sea redonda */
+      cursor: pointer; /* Cambia el cursor al pasar sobre la bolita */
+      -webkit-appearance: none; /* Elimina los estilos predeterminados de WebKit */
+
+    }
+
+
+  </style>
 
   <script>
     tailwind.config = {
