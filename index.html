@@ -18,6 +18,7 @@
       margin-top: 20px;
     }
   </style>
+
   <script>
     tailwind.config = {
       theme: {
@@ -35,7 +36,7 @@
 
 <body class="bg-white dark:bg-gray-900">
 
-<section class="bg-white dark:bg-gray-900">
+<section class="bg-white dark:bg-gray-900 ">
   <div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
     <div class="font-light text-gray-500 sm:text-lg dark:text-gray-400">
       <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Temperatura y
@@ -47,45 +48,127 @@
         En resumen, la variación del punto de ebullición con respecto a la temperatura y la presión es una manifestación
         de la dinámica molecular y las fuerzas intermoleculares. Comprender esta relación es esencial en campos como la
         química, la física y la ingeniería, donde se busca manipular las condiciones para procesos específicos.</p>
+      <p class="mb-4">El "Modificador de Punto de Ebullición del Agua" es una herramienta interactiva que permite
+        ajustar dinámicamente el punto
+        de ebullición y la presión del agua mediante controles deslizantes.</p>
+      <p class="mb-4">
+        Este enfoque proporciona una representación interactiva y visual de la relación entre el punto de ebullición y
+        la presión del agua, permitiendo al usuario explorar
+        cómo estos dos parámetros están interconectados. Cabe destacar que estas fórmulas son simplificadas y no
+        representan completamente las complejidades del comportamiento
+        real de la ebullición del agua.
+      </p>
 
     </div>
 
-    <div class="grid grid-cols-2 gap-4 mt-8">
-      <img class="w-full rounded-lg"
-           src="https://www.greensidesolutions.com/wp-content/uploads/2023/08/comienza-la-era-de-la-ebullicion-global.jpg" alt="office content 1">
+    <div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
+      <img class="w-full rounded-lg "
+           src="https://www.greensidesolutions.com/wp-content/uploads/2023/08/comienza-la-era-de-la-ebullicion-global.jpg"
+           alt="office content 1">
       <img class="mt-4 w-full lg:mt-10 rounded-lg"
-           src="https://media.istockphoto.com/id/471154393/es/foto/ebullici%C3%B3n-matraz-con-base-redonda.jpg?s=612x612&w=0&k=20&c=r1dQJksuwhahSLpE15bSalQPzWNNYMmgt7wJf_0LmI8=" alt="office content 2">
+           src="https://media.istockphoto.com/id/471154393/es/foto/ebullici%C3%B3n-matraz-con-base-redonda.jpg?s=612x612&w=0&k=20&c=r1dQJksuwhahSLpE15bSalQPzWNNYMmgt7wJf_0LmI8="
+           alt="office content 2">
     </div>
   </div>
 </section>
-<div class="bg-white dark:bg-gray-900">
-  <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Modificador de Punto de
+
+<div class="bg-white dark:bg-gray-900 p-8 w-auto ">
+  <h2 class="mb-4 text-3xl tracking-tight font-extrabold text-gray-900 dark:text-white">Modificador de Punto de
     Ebullición del Agua</h2>
-
-  <label for="pressureRange"
-         style="display: block; font-size: 0.875rem; font-weight: 500; color: #ffffff; margin-bottom: 4px;">Presión
-    (atm): </label>
-  <input type="range" min="0.01" max="4" step="0.01" value="1" id="pressureRange" oninput="updateBoilingPoint()"
-         style="width: 300px; margin-top: 8px;">
-
-  <p class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Presión actual: <span
-    id="currentPressure" style="font-weight: bold;">1</span> atm</p>
-
-  <div style="margin-top: 12px;">
-    <p class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">El punto de ebullición del agua
-      a <span id="boilingPoint" style="font-weight: bold;">100</span> °C.</p>
+  <div class=" w-2/3 lg:w-1/3 mx-auto shadow-lg ">
+    <div class="mb-6">
+      <label for="boilingPointRange" class="block text-l font-semibold text-gray-100 dark:text-white-400 mb-1">Punto de
+        Ebullición (°C):</label>
+      <input type="range" min="0" max="100" step="1" value="100" id="boilingPointRange" oninput="updatePressure()"
+             class=" w-3/4 lg:w-3/4 h-3 bg-gray-200 rounded-lg appearance-none cursor-pointer range-lg dark:bg-gray-700">
+      <p class="text-xl font-bold mt-2 text-blue-400 dark:text-white-400">Punto de Ebullición actual: <span
+        id="currentBoilingPoint">100</span> °C</p>
+    </div>
+    <div class="mb-6">
+      <label for="pressureRange" class="block text-l font-semibold text-gray-100 dark:text-white-400 mb-1">Presión
+        (atm):</label>
+      <input type="range" min="0.01" max="4" step="0.01" value="1" id="pressureRange" oninput="updateBoilingPoint()"
+             class="w-3/4 lg:w-3/4 range-md h-3 bg-gray-200 rounded-lg appearance-none cursor-pointer range-lg dark:bg-gray-700">
+      <p class="text-xl font-bold mt-2 text-blue-400 dark:text-white-400">Presión actual: <span
+        id="currentPressure">1</span> atm</p>
+    </div>
   </div>
 </div>
 
+<div class="mx-auto  max-w-screen-sm text-center mb-8 lg:mb-16 w-full py-40 pb-0">
+  <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Equipo</h2>
+  <p class="font-light text-gray-500 lg:mb-16 sm:text-xl dark:text-gray-400">Trabajo final química "Temperatura y ebullición"</p>
+</div>
+
+<section class="bg-white dark:bg-gray-900 ">
+  <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-0 lg:px-6 flex flex-wrap justify-center ">
+
+    <div class="grid gap-8 mb-6 lg:mb-16 sm:flex px-4 ">
+      <div class="items-center bg-gray-50 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+        <div class="p-5">
+          <h3 class="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
+            <a href="https://www.facebook.com/efrain.c.deluna/">Efrain Guadalupe Cardona De luna</a>
+          </h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid gap-8 mb-6 lg:mb-16 sm:flex px-4 ">
+      <div class="items-center bg-gray-50 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+        <div class="p-5">
+          <h3 class="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
+            <a href="#">Adair Emmanuel Soto Murguia</a>
+          </h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid gap-8 mb-6 lg:mb-16 sm:flex px-4 ">
+      <div class="items-center bg-gray-50 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+        <div class="p-5">
+          <h3 class="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
+            <a href="#">Juan Pablo Cervantes Mora</a>
+          </h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid gap-8 mb-6 lg:mb-16 sm:flex px-4 ">
+      <div class="items-center bg-gray-50 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+        <div class="p-5">
+          <h3 class="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
+            <a href="#">Saul OB07 a a</a>
+          </h3>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
 <script>
+  function updatePressure() {
+    var boilingPoint = document.getElementById("boilingPointRange").value;
+    var pressure = 1 + (100 - boilingPoint) / 30;
+
+    document.getElementById("currentBoilingPoint").innerText = boilingPoint;
+    document.getElementById("pressureRange").value = pressure.toFixed(2);
+    document.getElementById("currentPressure").innerText = pressure.toFixed(2);
+  }
+
   function updateBoilingPoint() {
     var pressure = document.getElementById("pressureRange").value;
     var boilingPoint = 100 - (pressure - 1) * 30;
 
     document.getElementById("currentPressure").innerText = pressure;
-    document.getElementById("boilingPoint").innerText = boilingPoint.toFixed(2);
+    document.getElementById("currentBoilingPoint").innerText = boilingPoint.toFixed(2);
   }
 </script>
+
 
 <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
 
