@@ -163,10 +163,11 @@
   function updateBoilingPoint() {
     var pressure = document.getElementById("pressureRange").value;
     var boilingPoint = 100 - (pressure - 1) * 30;
-
     document.getElementById("currentPressure").innerText = pressure;
+    document.getElementById("boilingPointRange").value = boilingPoint.toFixed(2);
     document.getElementById("currentBoilingPoint").innerText = boilingPoint.toFixed(2);
   }
+
 </script>
 
 
