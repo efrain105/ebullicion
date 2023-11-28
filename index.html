@@ -63,7 +63,9 @@
 
 
 <section class="bg-white dark:bg-gray-900 ">
+
   <div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
+
     <div class="font-light text-gray-500 sm:text-lg dark:text-gray-400">
       <p class="mb-4">El "Modificador de Punto de Ebullición del Agua" es una herramienta interactiva que permite
         ajustar dinámicamente el punto
@@ -75,37 +77,56 @@
         representan completamente las complejidades del comportamiento
         real de la ebullición del agua.
       </p>
-
     </div>
+
     <div class="bg-white dark:bg-gray-900 p-8 w-auto ">
       <h2 class="mb-4 text-3xl tracking-tight font-extrabold text-gray-900 dark:text-white">Modificador de Punto de
         Ebullición del Agua</h2>
+
       <div class=" w-full lg:w-full mx-auto shadow-lg ">
+
         <div class="mb-6">
-          <label for="boilingPointRange" class="block text-l font-semibold text-gray-100 dark:text-white-400 mb-1">Punto de
-            Ebullición (°C):</label>
-          <input type="range" min="0" max="100" step="1" value="100" id="boilingPointRange" oninput="updatePressure()"
-                 class=" w-3/4 lg:w-3/4 h-3 bg-gray-200 rounded-lg appearance-none cursor-pointer range-lg dark:bg-gray-700">
+          <label for="boilingPointRange"
+                 class="block text-l font-semibold text-gray-100 dark:text-white-400 mb-1"></label>
+          <div class="mb-4  flex items-center justify-center space-x-4">
+            <svg class="w-[27px] h-[27px] text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2" d="M7.75 4H19M7.75 4a2.25 2.25 0 0 1-4.5 0m4.5 0a2.25 2.25 0 0 0-4.5 0M1 4h2.25m13.5 6H19m-2.25 0a2.25 2.25 0 0 1-4.5 0m4.5 0a2.25 2.25 0 0 0-4.5 0M1 10h11.25m-4.5 6H19M7.75 16a2.25 2.25 0 0 1-4.5 0m4.5 0a2.25 2.25 0 0 0-4.5 0M1 16h2.25"/>
+            </svg>
+            <input type="range" min="0" max="129.70" step="1" value="100" id="boilingPointRange" oninput="updatePressure()"
+                   class=" w-3/4 lg:w-3/4 h-3 bg-gray-200 rounded-lg appearance-none cursor-pointer range-lg dark:bg-gray-400">
+          </div>
           <p class="text-xl font-bold mt-2 text-blue-400 dark:text-white-400">Punto de Ebullición actual: <span
             id="currentBoilingPoint">100</span> °C</p>
         </div>
+
         <div class="mb-6">
-          <label for="pressureRange" class="block text-l font-semibold text-gray-100 dark:text-white-400 mb-1">Presión
-            (atm):</label>
-          <input type="range" min="0.01" max="4" step="0.01" value="1" id="pressureRange" oninput="updateBoilingPoint()"
-                 class="w-3/4 lg:w-3/4 range-md h-3 bg-gray-200 rounded-lg appearance-none cursor-pointer range-lg dark:bg-gray-700">
+
+          <label for="pressureRange" class="block text-l font-semibold text-gray-100 dark:text-white-400 mb-1"></label>
+          <div class="mb-4  flex items-center justify-center space-x-4">
+            <svg class="w-[27px] h-[27px] text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2" d="M7.75 4H19M7.75 4a2.25 2.25 0 0 1-4.5 0m4.5 0a2.25 2.25 0 0 0-4.5 0M1 4h2.25m13.5 6H19m-2.25 0a2.25 2.25 0 0 1-4.5 0m4.5 0a2.25 2.25 0 0 0-4.5 0M1 10h11.25m-4.5 6H19M7.75 16a2.25 2.25 0 0 1-4.5 0m4.5 0a2.25 2.25 0 0 0-4.5 0M1 16h2.25"/>
+            </svg>
+            <input type="range" min="0.01" max="4.33" step="0.01" value="1" id="pressureRange" oninput="updateBoilingPoint()"
+                   class="w-3/4 lg:w-3/4 range-md h-3 bg-gray-200 rounded-lg appearance-none cursor-pointer range-lg dark:bg-gray-400">
+          </div>
+
+
+
           <p class="text-xl font-bold mt-2 text-blue-400 dark:text-white-400">Presión actual: <span
             id="currentPressure">1</span> atm</p>
         </div>
+
       </div>
     </div>
+
   </div>
 
 </section>
 
 <div class="mx-auto  max-w-screen-sm text-center mb-8 lg:mb-16 w-full pb-0">
   <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Equipo</h2>
-  <p class="font-light text-gray-500 lg:mb-16 sm:text-xl dark:text-gray-400">Trabajo final química "Temperatura y ebullición"</p>
+  <p class="font-light text-gray-500 lg:mb-16 sm:text-xl dark:text-gray-400">Trabajo final química "Temperatura y
+    ebullición"</p>
 </div>
 
 <section class="bg-white dark:bg-gray-900 ">
@@ -153,9 +174,6 @@
 
   </div>
 </section>
-
-
-
 
 
 <script>
